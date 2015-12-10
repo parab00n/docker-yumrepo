@@ -3,7 +3,8 @@ FROM nginx:1.9
 MAINTAINER "Jasper Lievisse Adriaanse" <j@jasper.la>
 
 RUN apt-get -qqy update && \
-    apt-get -qqy install createrepo
+    apt-get -qqy install createrepo && \
+    apt-get clean
 
 COPY configs/yum.conf /etc/nginx/conf.d/default.conf
 
