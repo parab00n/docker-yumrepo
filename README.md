@@ -13,8 +13,8 @@ they have to be passed as a comma-separated list in the `REPOS` environment
 variable.
 
     docker run -d --name yumrepo -p 80:80 \
-	-e REPOS="project1/x86_64,project2/x86_64" -v $PWD/repo:/var/repo \
-	jasperla/yumrepo
+        -e REPOS="project1/x86_64,project2/x86_64" -v $PWD/repo:/var/repo \
+        jasperla/yumrepo
 
 New repositories can be added by copying them into `$PWD/repo/` and breaking
 into the container:
