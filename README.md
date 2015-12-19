@@ -21,6 +21,12 @@ into the container:
 
     docker exec -ti yumrepo createrepo /var/repo/project3
 
+### Directory listings
+
+By default directory listings are disabled (returning `403 Forbidden`) for all
+directories except for the leaf directories (`x86_64` and `i386`). To re-enable
+listings for all directories please refer to the [config file](configs/yum.conf).
+
 ## Copyright
 
 2015 Jasper Lievisse Adriaanse <j@jasper.la>
